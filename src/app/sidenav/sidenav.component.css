@@ -1,0 +1,145 @@
+/* default setting */
+:root {
+    --primary-color:#c72727;
+    --secondary-color:#f99500;
+    --light-color:#f3f3f3;
+    --dark-color:#333;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: sans-serif;
+    background: var(--light-color)
+  }
+  
+  a{
+    color: #333;
+    text-decoration: none;
+  }
+  
+  ul{
+    list-style:none;
+  }
+  
+  img{
+    width: 100%;
+  }
+  
+  h1,h2,h3,h4,h5{
+    font-weight: lighter;
+    line-height: 1.3;
+  }
+  
+  /******************************************************************/
+  .container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+  #main-nav{
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 2;
+  }
+  #main-nav .container{
+    display: grid;
+    grid-template-columns: 6fr 3fr 2fr;
+    padding: 1rem;
+    align-items: center;
+  }
+  
+  #main-nav .logo{
+    width: 180px;
+  }
+  #main-nav ul{
+    justify-self: end;
+    display: flex;
+  }
+  #main-nav ul li a{
+    padding: 0.75rem;
+    font-weight: bold;
+  }
+  
+  #main-nav ul li a.current{
+    background: var(--primary-color);
+    color:#fff;
+  }
+  #main-nav ul li a:hover{
+    background: var(--light-color);
+    color: var(--dark-color);
+  }
+  #main-nav .social{
+    justify-self: center;
+  }
+  
+  #main-nav .social i{
+    color: #777;
+    margin-right: .5rem;
+  }
+  
+  #categories .container{
+    display: grid;
+    grid-template-columns: 1fr 4fr ;
+    padding: 1rem;
+  }
+  .item2{
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      align-items: center;
+      margin-bottom: 1rem;
+  }
+  .item1{
+      background: white;
+      padding: 0.5rem;
+      margin-right: 1rem;
+      margin-top:2px;
+  }
+  li{
+        padding: 0.5rem 0;
+        color: grey;
+    }
+    @media(max-width:500px){
+        #element1{
+            display: none;
+            
+        }
+        #element2{
+            display: none;
+        }
+        #element3{
+            display: none;
+        }
+        #element5{
+            display: none;
+        }
+        .item2{
+            margin-top:1rem;
+        }
+    }
+    @media(min-width:501px){
+        #btn1{
+            display: none;
+        }
+        #btn2{
+            display: none;
+        }
+        #btn3{
+            display: none;
+        }
+        #btn4{
+            display: none;
+        }
+        #btn5{
+            display: none;
+        }
+        .collapse{
+            display: block!important;
+        }
+    }
