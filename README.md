@@ -1,3 +1,4 @@
-HTML and CSS for the E-commerce webapp
+E-commerce webapp
 
-(not an angular project)
+
+Images attached
